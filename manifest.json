@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Remove Username Div PTIT",
+    "description": "Tự động xóa div username container-fluid trên code.ptit.edu.vn",
+    "version": "1.0",
+    "content_scripts": [
+      {
+        "matches": ["https://code.ptit.edu.vn/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "permissions": [
+      "activeTab"
+    ]
+  }
